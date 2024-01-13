@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "541799415730",
+    "project_id": "picability2-e94b7",
+    "storage_bucket": "picability2-e94b7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541799415730:android:ca55ad024b1fbe8a796eab",
+        "android_client_info": {
+          "package_name": "com.azicii.picability"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCV_24QcsMAe93InaKxoBNXhn9px-5BVZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
