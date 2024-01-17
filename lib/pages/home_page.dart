@@ -71,20 +71,32 @@ class _HomePageState extends State<HomePage> {
 
     // display all users except current user
     if (_auth.currentUser!.email != data['email']) {
-      return ListTile(
-        title: Text(data['email']),
-        onTap: () {
-          // pass the clicked user's UID to the chat page
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => ChatPage(
-                receiverUserEmail: data['email'],
-                receiverUserID: data['uid'] ,
+      return Container(
+        padding: const EdgeInsets.all(10),
+        margin: const EdgeInsets.symmetric(
+            horizontal: 25,
+            vertical: 10,
+        ),
+        decoration: BoxDecoration(
+          color: Colors.greenAccent,
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: ListTile(
+          title: Text(data['email']),
+          subtitle: Text('Your bff'),
+          onTap: () {
+            // pass the clicked user's UID to the chat page
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => ChatPage(
+                  receiverUserEmail: data['email'],
+                  receiverUserID: data['uid'] ,
+                ),
               ),
-            ),
-          );
-        }
+            );
+          }
+        ),
       );
     } else {
       // return empty container

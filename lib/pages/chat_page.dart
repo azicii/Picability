@@ -86,6 +86,10 @@ class _ChatPageState extends State<ChatPage> {
         ? Alignment.centerRight
         : Alignment.centerLeft;
 
+    var chatBubbleColor = (data['senderId'] == _firebaseAuth.currentUser!.uid)
+        ? Colors.blue
+        : Colors.black54;
+
     return Container(
       alignment: alignment,
       child: Padding(
@@ -102,7 +106,10 @@ class _ChatPageState extends State<ChatPage> {
           children: [
             Text(data['senderEmail']),
             const SizedBox(height: 5),
-            ChatBubble(message: data['message']),
+            ChatBubble(
+              message: data['message'],
+              color: chatBubbleColor,
+            ),
           ],
         ),
       ),
