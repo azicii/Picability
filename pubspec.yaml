@@ -39,6 +39,7 @@ dependencies:
   firebase_auth: ^4.16.0
   google_sign_in: ^6.2.1
   cloud_firestore: ^4.14.0
+  flutter_slidable: ^1.2.0
   provider:
 
 dev_dependencies:

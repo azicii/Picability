@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:picability/pages/home_page.dart';
+import 'package:picability/pages/page_navigator.dart';
 import 'package:picability/pages/login_or_register_page.dart';
 
 // Auth page determines if user is already signed in or not
@@ -17,12 +17,12 @@ class AuthPage extends StatelessWidget {
         builder: (context, snapshot) {
           // user is logged in
           if (snapshot.hasData) {
-            return HomePage();
+            return const PageNavigator();
           }
 
           //user is NOT logged in
           else {
-            return LoginOrRegisterPage();
+            return const LoginOrRegisterPage();
           }
         },
       ),
