@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:picability/pages/auth_page.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:picability/services/auth_service.dart';
-import 'package:provider/provider.dart';
 import 'firebase_options.dart';
 
 void main() async {
@@ -10,13 +8,9 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(
-      ChangeNotifierProvider(
-          create: (context) => AuthService(),
-        child: const MyApp(),
-      ),
-  );
+  runApp(const MyApp());
 }
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

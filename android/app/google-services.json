@@ -2,7 +2,7 @@
   "project_info": {
     "project_number": "541799415730",
     "project_id": "picability2-e94b7",
-    "storage_bucket": "picability2-e94b7.appspot.com"
+    "storage_bucket": "picability2-e94b7.firebasestorage.app"
   },
   "client": [
     {
@@ -12,7 +12,20 @@
           "package_name": "com.azicii.picability"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "541799415730-vc062c2b1l0bbdn5v23hje436a1617in.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.azicii.picability",
+            "certificate_hash": "9621a09b2395b7a842931c4a66eb3569f188cf46"
+          }
+        },
+        {
+          "client_id": "541799415730-kbmv2lil2oudcbh5e73f82qrdqdcdi4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCV_24QcsMAe93InaKxoBNXhn9px-5BVZw"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541799415730-6k2muuu9gms2ulv4od95jo4d0kbf6cfr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "541799415730-7vr5bcepi0go958do71023tshovl0s3m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.azicii.picability"
+              }
+            }
+          ]
         }
       }
     }

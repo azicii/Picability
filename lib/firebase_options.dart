@@ -27,10 +27,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.macOS:
         return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -49,7 +46,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '541799415730',
     projectId: 'picability2-e94b7',
     authDomain: 'picability2-e94b7.firebaseapp.com',
-    storageBucket: 'picability2-e94b7.appspot.com',
+    storageBucket: 'picability2-e94b7.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
@@ -57,7 +54,7 @@ class DefaultFirebaseOptions {
     appId: '1:541799415730:android:ca55ad024b1fbe8a796eab',
     messagingSenderId: '541799415730',
     projectId: 'picability2-e94b7',
-    storageBucket: 'picability2-e94b7.appspot.com',
+    storageBucket: 'picability2-e94b7.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
@@ -65,16 +62,30 @@ class DefaultFirebaseOptions {
     appId: '1:541799415730:ios:dcfffa7790e215c0796eab',
     messagingSenderId: '541799415730',
     projectId: 'picability2-e94b7',
-    storageBucket: 'picability2-e94b7.appspot.com',
+    storageBucket: 'picability2-e94b7.firebasestorage.app',
+    androidClientId: '541799415730-vc062c2b1l0bbdn5v23hje436a1617in.apps.googleusercontent.com',
+    iosClientId: '541799415730-7vr5bcepi0go958do71023tshovl0s3m.apps.googleusercontent.com',
     iosBundleId: 'com.azicii.picability',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyC4ST28-omUAEl-y0vgFoa4w1TTuYgHutc',
-    appId: '1:541799415730:ios:68ab42b096dd3e37796eab',
+    appId: '1:541799415730:ios:dcfffa7790e215c0796eab',
     messagingSenderId: '541799415730',
     projectId: 'picability2-e94b7',
-    storageBucket: 'picability2-e94b7.appspot.com',
-    iosBundleId: 'com.azicii.picability.RunnerTests',
+    storageBucket: 'picability2-e94b7.firebasestorage.app',
+    androidClientId: '541799415730-vc062c2b1l0bbdn5v23hje436a1617in.apps.googleusercontent.com',
+    iosClientId: '541799415730-7vr5bcepi0go958do71023tshovl0s3m.apps.googleusercontent.com',
+    iosBundleId: 'com.azicii.picability',
   );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyA5Pzjqjl9XtU8BivgiqWGguyx17zBQr10',
+    appId: '1:541799415730:web:8e128dbbd75450fc796eab',
+    messagingSenderId: '541799415730',
+    projectId: 'picability2-e94b7',
+    authDomain: 'picability2-e94b7.firebaseapp.com',
+    storageBucket: 'picability2-e94b7.firebasestorage.app',
+  );
+
 }
